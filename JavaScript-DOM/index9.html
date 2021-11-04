@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Post Request</title>
+    <link rel="stylesheet" href="custom9.css" />
+  </head>
+
+  <body>
+    <div class="container" id="cont">
+      <h1>Post Request Handle In DOM</h1>
+      <form action="" class="form-box" id="post-form">
+        <label class="title"><strong>Please fill-up the form</strong></label>
+        <div class="form-group">
+          <label for="title">Please Insert a Title:</label>
+          <input type="text" name="title" id="title" placeholder="Enter the title">
+        </div>
+        <div class="form-group">
+          <label for="body">Please Provide Your Description:</label>
+          <textarea name="body" id="body" cols="30" rows="10" placeholder="Enter your message"></textarea>
+        </div>
+        <input type="submit" value="submit">
+      </form>
+
+      <ul class="list-group" id="posts"></ul>
+    </div>
+
+    <!-- JavaScript File Linking -->
+    <script src="dom15.js"></script>
+  </body>
+</html>

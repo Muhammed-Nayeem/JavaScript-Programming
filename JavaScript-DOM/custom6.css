@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+h1 {
+  margin: 10px 0;
+  color: greenyellow;
+}
+
+.list-group {
+  list-style-type: none;
+  margin: 25px 0;
+}
+
+.list-group .list-item {
+  border: 1px solid #eee;
+  padding: 10px;
+  width: 500px;
+  color: blue;
+}
+
+.list-group .list-item .input-form {
+  width: 100%;
+  padding: 10px;
+}
+
+.form-box {
+  margin: 40px 0;
+  width: 500px;
+}
+
+.form-box label {
+  display: block;
+  color: blue;
+  font-size: 20px;
+  margin-bottom: 6px;
+}
+
+.form-box input {
+  width: 100%;
+  padding: 10px 8px;
+  color: blue;
+  border: 1px solid #eee;
+  outline: none;
+}
+
+.form-box p {
+  font-size: 18px;
+  color: yellowgreen;
+  margin: 8px 0;
+}
+
+.form-check {
+  margin: 30px 0;
+  width: 500px;
+  padding: 10px 0;
+}
+
+.form-check h3 {
+  color: blue;
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.form-check .checkboxes {
+  width: 100%;
+}
+
+.form-check .checkboxes label {
+  display: block;
+  margin: 8px 0;
+}
+
+.form-check .selected-skills {
+  margin: 20px 0;
+  width: 100%;
+}
+
+.form-check .selected-skills p {
+  color: blue;
+  font-size: 18px;
+  padding: 6px 0;
+}

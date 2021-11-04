@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Handling In DOM</title>
+    <link rel="stylesheet" href="custom6.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h1 id="title">JavaScript DOM Event Handling</h1>
+
+      <ul class="list-group" id="list">
+        <li class="list-item">Item One</li>
+        <li class="list-item">Item Two</li>
+        <li class="list-item">Item Three</li>
+        <li class="list-item">Item Four</li>
+      </ul>
+
+      <div class="form-box">
+        <label for="name">What is your name?</label>
+        <input type="text" name="full-name" id="name" placeholder="Enter your name">
+        <p id="show-name"></p>
+      </div>
+
+      <div class="form-check">
+        <h3 id="skill-title">Select Your Skills:</h3>
+        <div class="checkboxes" id="check-box">
+          <label for="gridcheck1">
+            <input type="checkbox" name="skills" id="gridcheck1" value="C Programming"> C Programming
+          </label>
+        
+          <label for="gridcheck2">
+            <input type="checkbox" name="skills" id="gridcheck2" value="Java Programming"> Java Programming
+          </label>
+
+          <label for="gridcheck3">
+            <input type="checkbox" name="skills" id="gridcheck3" value="JavaScript Programming"> JavaScript Programming
+          </label>
+
+          <label for="gridcheck4">
+            <input type="checkbox" name="skills" id="gridcheck4" value="Python Programming"> Python Programming
+          </label>
+
+          <label for="gridcheck5">
+            <input type="checkbox" name="skills" id="gridcheck5" value="PHP Programming"> PHP Programming
+          </label>
+        </div>
+        <div class="selected-skills" id="skills">
+          <p>Selected Skills:</p>
+          <span id="chosen-skills"></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- JavaScript File Linking -->
+    <script src="dom12.js"></script>
+  </body>
+</html>

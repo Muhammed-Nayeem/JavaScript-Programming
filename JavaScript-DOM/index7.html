@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript DOM</title>
+    <link rel="stylesheet" href="custom7.css">
+  </head>
+
+  <body>
+    <div class="container" id="cont">
+      <h1 id="title">JavaScript DOM Form Handling</h1>
+      <form action="" id="form">
+        <label for="" class=""><strong>Please fill the form</strong></label>
+        <div class="form-group">
+          <label for="name">What is your name?</label>
+          <input type="text" name="name" id="name" placeholder="Enter Your Name">
+          <div class="invalid-feedback">You must provide a name.</div>
+        </div>
+        <div class="form-group">
+          <label for="email">What is your Email?</label>
+          <input type="email" name="email" id="email" placeholder="example@email.com">
+        </div>
+        <div class="form-group">
+          <label for="password">What is your Password?</label>
+          <input type="password" name="password" id="password" placeholder="Enter Your Password">
+        </div>
+        <div class="form-group">
+          <label for="Country">Select Your Country:</label>
+          <select name="country" id="country">
+            <option value="Bangladesh">Bangladesh</option>
+            <option value="India">India</option>
+            <option value="Pakistan">Pakistan</option>
+            <option value="SriLanka">SriLanka</option>
+            <option value="Afghanistan">Afghanistan</option>
+          </select>
+        </div>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+
+    <!-- JavaScript File Linking -->
+    <script src="dom13.js"></script>
+  </body>
+</html>

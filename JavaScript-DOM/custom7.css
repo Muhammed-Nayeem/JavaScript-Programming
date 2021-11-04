@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 1000px;
+  margin: 0 auto;
+}
+h1#title {
+  text-align: center;
+  margin: 10px;
+  color: palegreen;
+}
+form {
+  width: 500px;
+  margin: 0 auto;
+  padding: 20px 10px;
+}
+label.form-title {
+  font-size: 22px;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 10px;
+}
+.form-group {
+  width: 100%;
+  margin: 10px 0;
+}
+.form-group .invalid-feedback {
+  display: none;
+  margin: 6px 0;
+}
+.form-group label {
+  display: block;
+  font-size: 20px;
+  color: blue;
+  margin-bottom: 5px;
+}
+.form-group input {
+  width: 100%;
+  padding: 12px 8px;
+  border: 1px solid #eee;
+  color: blue;
+}
+.form-group select {
+  width: 100%;
+  padding: 10px 8px;
+  color: blue;
+  border: 1px solid #eee;
+}
+.form-group select option {
+  font-size: 16px;
+}
+form input[type="submit"] {
+  border: 1px solid lightgreen;
+  background-color: lightgreen;
+  padding: 10px 50px;
+  margin: 20px 0;
+  cursor: pointer;
+}
