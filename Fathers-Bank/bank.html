@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fathers-Bank</title>
+    <!-- tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+     <!-- header content -->
+     <header class="py-10 bg-indigo-100">
+      <div class="container mx-auto">
+        <h1 class="text-center text-4xl font-semibold capitalize text-black">let's get some <span class="text-indigo-600">moooooney</span>!!!</h1>
+      </div>
+    </header>
+
+    <!-- balance section -->
+    <section>
+      <div class="container mx-auto">
+        <div class="py-10">
+          <div class="grid grid-cols-3 gap-20">
+            <div class="bg-emerald-600 py-6 px-8 rounded text-center">
+              <h4 class="capitalize text-2xl text-white font-semibold mb-3">deposit</h4>
+              <h1 class="text-white text-4xl font-bold">$<span id="deposit-money">00</span></h1>
+            </div>
+            <div class="bg-rose-600 py-6 px-8 rounded text-center">
+              <h4 class="capitalize text-2xl text-white font-semibold mb-3">withdraw</h4>
+              <h1 class="text-white text-4xl font-bold">$<span id="withdraw-money">00</span></h1>
+            </div>
+            <div class="bg-green-600 py-6 px-8 rounded text-center">
+              <h4 class="capitalize text-2xl text-white font-semibold mb-3">total balance</h4>
+              <h1 class="text-white text-4xl font-bold">$<span id="total-money">1240</span></h1>
+            </div>
+          </div>
+          <div class="mt-20 grid grid-cols-2 gap-20">
+            <div class="bg-purple-600 px-5 py-6 rounded">
+              <h4 class="capitalize text-xl text-white mb-3">please deposit your money</h4>
+              <input class="block w-4/5 px-4 py-2 rounded mb-5" type="text" id="deposit" placeholder="$ Amount you want to deposit">
+              <button class="bg-green-600 text-white capitalize text-base px-12 py-2 rounded hover:bg-green-700 transition-all" id="deposit-btn">deposit</button>
+            </div>
+            <div class="bg-indigo-600 px-5 py-6 rounded">
+              <h4 class="capitalize text-xl text-white mb-3">please withdraw your money</h4>
+              <input class="block w-4/5 px-4 py-2 rounded mb-5" type="text" id="withdraw" placeholder="$ Amount you want to withdraw">
+              <button class="bg-rose-600 text-white text-base capitalize px-12 py-2 rounded hover:bg-rose-700 transition-all" id="withdraw-btn">withdraw</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- javascript files -->
+    <script src="./JS/utilities.js"></script>
+    <script src="./JS/deposit.js"></script>
+    <script src="./JS/withdraw.js"></script>
+  </body>
+</html>
