@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Phone Hunter</title>
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css" />
+
+    <!-- Internal Custom CSS -->
+    <style>
+      img {
+        height: 285px;
+        width: 85% !important;
+        margin: 20px auto 10px auto;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- header area -->
+    <header class="header-area bg-primary py-2">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-12">
+            <div class="header-content text-center">
+              <h3 class="text-white text-uppercase">Phone Hunter</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- main content -->
+    <main class="phone-hunter">
+      <!-- search field -->
+      <section class="search-area mt-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-7 mx-auto">
+              <div class="search-box d-flex align-items-center gap-2">
+                <input id="search-phone" type="text" class="form-control" placeholder="Search your phone....">
+                <button id="search-btn" class="bg-primary text-white text-capitalize border-0 btn-outline-primary rounded px-4 py-2">search</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- phones container -->
+      <section class="phone-gallery py-5">
+        <div class="container">
+          <div id="phones-container" class="row row-cols-1 row-cols-md-3 g-4">
+
+          </div>
+          <!-- no phone found message -->
+          <div id="no-phone-found" class="d-none">
+            <h3 class="text-warning text-center">No Phone Found! Please try again with the valid phone name!</h3>
+          </div>
+          <!-- spinner or loader -->
+          <div id="loader" class="d-none">
+            <div class="d-flex justify-content-center align-items-center" style="height: 400px;">
+              <div class="spinner-border text-success" role="status">
+                <span class="visually-hidden">Loading...</span>
+              </div>
+            </div>
+          </div>
+          <div id="show-all-container" class="text-center d-none mt-3">
+            <button id="show-all-btn" class="btn btn-primary">Show All</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- modal -->
+      <section class="phone-modal">
+        <!-- Modal -->
+        <div class="modal fade" id="phoneDetailsModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content" id="modal-details">
+              
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- bootstrap js -->
+    <script src="./Js/bootstrap.bundle.min.js"></script>
+    <script src="./Js/app.js"></script>
+  </body>
+</html>
